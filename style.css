@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+     background: hwb(286 38% 23% / 0.685);
+     text-shadow: 10px 2px 5px #fff;
+     filter: drop-shadow(20px 10px 10px #9363ec);
+     
+}   
+
+a{
+    color: #313030;
+    text-decoration: none;
+    
+    
+}
+
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+}
+
+.main-header h1{
+    font-size: 4em;
+    line-height: 1.2em;
+    /* filter: drop-shadow(30px 30px 30px #299da1); */
+    
+    font-family: 'Playfair Display', serif;
+font-family: 'Young Serif', serif;
+    
+
+}
+
+.main-header h1 span{
+    color: #5c11b1;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2em;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+    background: #8f8d8d;
+    margin-bottom: 2em;
+    border-radius: 10px;
+  
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card div{
+    padding: 2em;
+}
+
+.card h3{
+    margin-bottom: 2em;
+}
+
+.card:nth-child(even) img{
+    order: 2;
+}
+
+.btn{
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 0.8em 1.8em;
+    margin-top: 2em;
+    cursor: default;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: blueviolet;
+    opacity: 0.8;
+    box-shadow: 4px 4px 2px #0c585e;
+    padding: 0.9 1.9;
+
+}
+
+.galeria{
+    margin: 2em;
+    display: flex;
+    height: 20em;
+    gap: 0.5em;
+}
+
+.galeria div{
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: left;
+    transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-radius: 10px ;
+
+}
+.galeria div:hover{
+    flex: 3;
+}
+
+.galeria:hover div:not(:hover){
+    /* filter: blur(2px) contrast(100%); */
+    filter: drop-shadow(16px 16px 20px #1d05a7 ) blur(2px);
+
+}
+p{font-family: Georgia, 'Times New Roman', Times, serif;}
+
+h3{
+    box-shadow: 4px 4px 4px  #000;
+}
+
+
